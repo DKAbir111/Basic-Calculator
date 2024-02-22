@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <h2 style="color: blue;">Basic Calculator Using JavaScript:</h2>
+    <hr>
+    
+    
+    <table style="background-color: aquamarine;">
+        <tr>
+            <td>
+                First Number:
+            </td>
+            <td>
+                <input type="number" placeholder="Enter a number" id="first">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Second Number:
+            </td>
+            <td>
+                <input type="number" placeholder="Enter another number" id="second">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Result:
+            </td>
+            <td>
+                <input type="number" placeholder="" id="result">
+            </td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td></td>
+             
+            <td>
+            <input type="submit" value="+" id="plus" style="background-color: red;">
+            <input type="submit" value="-" id="min" style="background-color: blue;">
+            <input type="submit" value="*" id="mul" style="background-color: green;">
+            <input type="submit" value="/" id="div" style="background-color: blueviolet;">
+            <input type="submit" value="%" id="mod" style="background-color: brown;">
+            </td>
+        </tr>
+    </table>
+    <script>
+         var plusBtn=document.getElementById("plus");
+         plusBtn.onclick=function()
+         {
+            var FirstNumber=Number(document.getElementById("first").value);
+            var SecondNumber=Number(document.getElementById("second").value);
+            var result=FirstNumber+SecondNumber;
+            document.getElementById("result").value=result;
+
+
+         };
+         var minBtn=document.getElementById("min");
+         minBtn.onclick=function()
+         {
+            var FirstNumber=Number(document.getElementById("first").value);
+            var SecondNumber=Number(document.getElementById("second").value);
+            var result=FirstNumber-SecondNumber;
+            document.getElementById("result").value=result;
+
+
+         };
+         var mulBtn=document.getElementById("mul");
+         mulBtn.onclick=function()
+         {
+            var FirstNumber=Number(document.getElementById("first").value);
+            var SecondNumber=Number(document.getElementById("second").value);
+            var result=FirstNumber*SecondNumber;
+
+            document.getElementById("result").value=result;
+         };
+         var divBtn=document.getElementById("div");
+         divBtn.onclick=function()
+         {
+            var FirstNumber=Number(document.getElementById("first").value);
+            var SecondNumber=Number(document.getElementById("second").value);
+            var result=FirstNumber/SecondNumber;
+
+            document.getElementById("result").value=result;
+         };
+         var modBtn=document.getElementById("mod");
+         modBtn.onclick=function()
+         {
+            var FirstNumber=Number(document.getElementById("first").value);
+            var SecondNumber=Number(document.getElementById("second").value);
+            var result=FirstNumber%SecondNumber;
+
+            document.getElementById("result").value=result;
+         };
+    </script>
+</body>
+</html>
+
